@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Kumar | Full-Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="particle-container">
+        <div id="particles-js"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span>AK</span>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="github-projects.html" class="nav-link">GitHub</a></li>
+            <li><a href="#media-club" class="nav-link">Media Club</a></li>
+            <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Hi, I'm <span class="highlight">Aman Kumar</span></h1>
+                <div class="typewriter">
+                    <span id="typewriter-text"></span><span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description">A passionate full-stack developer and B.Tech IT student from India</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="github-projects.html" class="btn secondary-btn">GitHub Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/amankr59" target="_blank" class="social-icon github-icon" data-tooltip="View my GitHub Projects"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-container">
+                    <img src="my piccs.jpg" alt="Aman Kumar">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="scroll-text">Scroll down</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header" data-aos="fade-up">
+            <h2>About <span class="highlight">Me</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <p>I'm an enthusiastic B.Tech IT student and aspiring full-stack developer with a passion for creating elegant, efficient solutions. My journey in technology is driven by curiosity and a commitment to continuous learning.</p>
+                <p>With expertise in both front-end and back-end technologies, I enjoy building responsive web applications that deliver exceptional user experiences while maintaining clean, maintainable code.</p>
+            </div>
+            <div class="skills-container" data-aos="fade-left">
+                <h3>Technical <span class="highlight">Skills</span></h3>
+                <div class="skills">
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML/CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">DSA</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-chips">
+                    <span class="chip">React</span>
+                    <span class="chip">MongoDB</span>
+                    <span class="chip">Express</span>
+                    <span class="chip">Git</span>
+                    <span class="chip">Responsive Design</span>
+                    <span class="chip">RESTful APIs</span>
+                </div>
+                
+                <div class="github-stats" data-aos="fade-up" data-aos-delay="300">
+                    <h4>GitHub <span class="highlight">Stats</span></h4>
+                    <div class="github-stats-cards">
+                        <img src="https://github-readme-stats.vercel.app/api?username=amankr59&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" class="github-card">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=amankr59&layout=compact&theme=radical&hide_border=true" alt="Top Languages" class="github-card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header" data-aos="fade-up">
+            <h2>My <span class="highlight">Projects</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400?text=Simon+Game" alt="Simon Game">
+                </div>
+                <div class="project-content">
+                    <h3>Simon Game</h3>
+                    <p>An interactive web-based version of the classic Simon memory game, built with HTML, CSS, and JavaScript.</p>
+                    <div class="tech-stack">
+                        <span class="tech">HTML5</span>
+                        <span class="tech">CSS3</span>
+                        <span class="tech">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/amankr59/simon-game" target="_blank" class="btn project-btn"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400?text=Quora+Post" alt="Quora Post">
+                </div>
+                <div class="project-content">
+                    <h3>Quora Post</h3>
+                    <p>A full-stack application inspired by Quora, allowing users to create accounts, ask questions, and share answers.</p>
+                    <div class="tech-stack">
+                        <span class="tech">Node.js</span>
+                        <span class="tech">Express</span>
+                        <span class="tech">MongoDB</span>
+                        <span class="tech">React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/amankr59/quora-clone" target="_blank" class="btn project-btn"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400?text=Weather+App" alt="Weather App">
+                </div>
+                <div class="project-content">
+                    <h3>Weather App</h3>
+                    <p>A real-time weather application that provides current weather data and forecasts for any location using OpenWeatherMap API.</p>
+                    <div class="tech-stack">
+                        <span class="tech">React</span>
+                        <span class="tech">API Integration</span>
+                        <span class="tech">CSS3</span>
+                        <span class="tech">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/amankr59/weather-app" target="_blank" class="btn project-btn"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400?text=Task+Manager" alt="Task Manager">
+                </div>
+                <div class="project-content">
+                    <h3>Task Manager</h3>
+                    <p>A full-stack task management application with user authentication, task categorization, and deadline reminders.</p>
+                    <div class="tech-stack">
+                        <span class="tech">MongoDB</span>
+                        <span class="tech">Express</span>
+                        <span class="tech">React</span>
+                        <span class="tech">Node.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/amankr59/task-manager" target="_blank" class="btn project-btn"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400?text=E-Commerce+API" alt="E-Commerce API">
+                </div>
+                <div class="project-content">
+                    <h3>E-Commerce API</h3>
+                    <p>A RESTful API for e-commerce platforms with product management, user authentication, cart functionality, and order processing.</p>
+                    <div class="tech-stack">
+                        <span class="tech">Node.js</span>
+                        <span class="tech">Express</span>
+                        <span class="tech">MongoDB</span>
+                        <span class="tech">JWT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Documentation</a>
+                        <a href="https://github.com/amankr59/ecommerce-api" target="_blank" class="btn project-btn"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400?text=Portfolio+Website" alt="Portfolio Website">
+                </div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal portfolio website with dark theme, animations, and interactive elements to showcase projects and skills.</p>
+                    <div class="tech-stack">
+                        <span class="tech">HTML5</span>
+                        <span class="tech">CSS3</span>
+                        <span class="tech">JavaScript</span>
+                        <span class="tech">AOS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/amankr59/portfolio" target="_blank" class="btn project-btn"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Club Section -->
+    <section id="media-club" class="media-club">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Media Club <span class="highlight">Video Editing Work</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="media-club-container">
+            <div class="media-club-info" data-aos="fade-up">
+                <div class="club-logo">
+                    <i class="fas fa-video"></i>
+                    <h3>The HIT Times</h3>
+                </div>
+                <p class="club-description">
+                    As an active member of my college's largest media club, <span class="highlight">The HIT Times</span>, I specialize in video editing and motion graphics. 
+                    I collaborate with a talented team to create engaging content that showcases campus life, events, and student achievements. 
+                    My role involves transforming raw footage into compelling stories through creative editing, transitions, and visual effects.
+                </p>
+                <div class="club-social">
+                    <a href="https://www.instagram.com/thehittimes" target="_blank" class="club-social-link">
+                        <i class="fab fa-instagram"></i> @thehittimes
+                    </a>
+                </div>
+            </div>
+            
+            <div class="media-reels-container" data-aos="fade-up">
+                <div class="media-reels-grid">
+                    <!-- Reel 1 -->
+                    <div class="media-reel-card">
+                        <div class="reel-thumbnail">
+                            <img src="https://via.placeholder.com/600x800/1a1a1a/00e5ff?text=HIT+Times+Reel" alt="HIT Times Reel">
+                            <div class="reel-overlay">
+                                <a href="https://www.instagram.com/reel/C4mvD2QBscT/?igsh=MW5udzNidTFzbHFtdw==" target="_blank" class="reel-play-btn">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Watch on Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="reel-info">
+                            <h4>Campus Event Coverage</h4>
+                            <p>Creative editing showcasing student activities</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Reel 2 -->
+                    <div class="media-reel-card">
+                        <div class="reel-thumbnail">
+                            <img src="https://via.placeholder.com/600x800/1a1a1a/00e5ff?text=HIT+Times+Reel" alt="HIT Times Reel">
+                            <div class="reel-overlay">
+                                <a href="https://www.instagram.com/reel/C4BWLRGBiyB/?igsh=MXVlcGltc3R3bXpqcw==" target="_blank" class="reel-play-btn">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Watch on Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="reel-info">
+                            <h4>Technical Fest Highlights</h4>
+                            <p>Dynamic transitions and effects</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Reel 3 -->
+                    <div class="media-reel-card">
+                        <div class="reel-thumbnail">
+                            <img src="https://via.placeholder.com/600x800/1a1a1a/00e5ff?text=HIT+Times+Reel" alt="HIT Times Reel">
+                            <div class="reel-overlay">
+                                <a href="https://www.instagram.com/reel/C_Gl-ijSe6q/?igsh=ZDQwOTJ2b253Zzc2" target="_blank" class="reel-play-btn">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Watch on Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="reel-info">
+                            <h4>College Cultural Event</h4>
+                            <p>Cinematic editing with motion graphics</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="see-more-container" data-aos="fade-up">
+                    <a href="https://www.instagram.com/thehittimes" target="_blank" class="see-more-btn">
+                        <i class="fab fa-instagram"></i> See More on Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+        <div class="section-header" data-aos="fade-up">
+            <h2>My <span class="highlight">Hobbies</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="hobbies-container">
+            <!-- Photography Subsection -->
+            <div class="hobby-section" data-aos="fade-up">
+                <h3>Photography <span class="highlight"><i class="fas fa-camera"></i></span></h3>
+                <p class="hobby-description">Capturing moments and perspectives through my lens. I enjoy landscape and portrait photography.</p>
+                
+                <div class="media-grid">
+                    <div class="media-card">
+                        <div class="media-img">
+                            <img src="sunset.jpg" alt="Sunset Photography">
+                            <div class="media-overlay">
+                                <div class="media-title">Sunset View</div>
+                                <div class="media-description">Golden hour landscape shot</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-card">
+                        <div class="media-img">
+                            <img src="butterfly.jpg" alt="Butterfly Photography">
+                            <div class="media-overlay">
+                                <div class="media-title">Butterfly</div>
+                                <div class="media-description">Macro photography of nature</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="view-more-container">
+                    <a href="https://www.instagram.com/ak.clicks03" target="_blank" class="view-more-btn">
+                        <i class="fab fa-instagram"></i> View More on Instagram
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Video Editing Subsection -->
+            <div class="hobby-section" data-aos="fade-up" data-aos-delay="200">
+                <h3>Video Editing <span class="highlight"><i class="fas fa-film"></i></span></h3>
+                <p class="hobby-description">Creating engaging visual stories through video editing. I specialize in motion graphics and transitions.</p>
+                
+                <div class="media-grid">
+                    <div class="media-card video-card">
+                        <div class="media-video">
+                            <video poster="sunset.jpg" controls>
+                                <source src="my edit.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="media-info">
+                            <div class="media-title">Cinematic Edit</div>
+                            <div class="media-description">Landscape time-lapse with effects</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="view-more-container">
+                    <a href="https://www.instagram.com/ak.clicks03" target="_blank" class="view-more-btn">
+                        <i class="fab fa-instagram"></i> View More on Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="section-header" data-aos="fade-up">
+            <h2>My <span class="highlight">Resume</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="resume-content">
+            <div class="resume-download-centered" data-aos="fade-up">
+                <p>View my complete resume to learn more about my education, experience, and skills.</p>
+                <a href="RESUME (2).pdf" download class="btn download-btn">
+                    <i class="fas fa-cloud-download-alt"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Contact <span class="highlight">Me</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>amankumar@example.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 1234567890</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>India</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/amankr59" target="_blank" class="social-link github-link" data-tooltip="View my GitHub Projects"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-form-container" data-aos="fade-left">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>AK</span>
+            </div>
+            <p>© 2023 Aman Kumar. All Rights Reserved.</p>
+            <div class="footer-social">
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/amankr59" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

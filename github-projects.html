@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aman Kumar - Full Stack Developer Portfolio showcasing GitHub projects and skills">
+    <meta name="keywords" content="Aman Kumar, developer, portfolio, GitHub, web development, full stack developer">
+    <meta name="author" content="Aman Kumar">
+    <title>Aman Kumar | GitHub Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="github-projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="particle-container">
+        <div id="particles-js"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><span>AK</span></a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="index.html#about" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link active">GitHub Projects</a></li>
+            <li><a href="index.html#resume" class="nav-link">Resume</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="github-header">
+        <div class="container">
+            <div class="github-header-content" data-aos="fade-up">
+                <div class="github-profile-info">
+                    <div class="github-avatar" id="github-avatar">
+                        <!-- Avatar will be loaded via JavaScript -->
+                    </div>
+                    <div class="github-bio">
+                        <h1>Aman Kumar</h1>
+                        <p id="github-bio">Full Stack Developer passionate about creating elegant, efficient solutions.</p>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/amankr59" target="_blank" class="social-icon github-icon" data-tooltip="View my GitHub Profile"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Projects Section -->
+    <section class="github-projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My <span class="highlight">GitHub Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="search-container" data-aos="fade-up">
+                <div class="search-box">
+                    <input type="text" id="search-projects" placeholder="Search projects...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            
+            <div class="repo-stats" data-aos="fade-up">
+                <div class="repo-stat">
+                    <span id="repo-count">0</span>
+                    <p>Repositories</p>
+                </div>
+                <div class="repo-stat">
+                    <span id="stars-count">0</span>
+                    <p>Stars</p>
+                </div>
+                <div class="repo-stat">
+                    <span id="forks-count">0</span>
+                    <p>Forks</p>
+                </div>
+            </div>
+            
+            <div class="projects-grid" id="projects-container" data-aos="fade-up">
+                <!-- Projects will be loaded here via JavaScript -->
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading projects...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>AK</span>
+            </div>
+            <p>© 2023 Aman Kumar. All Rights Reserved.</p>
+            <div class="footer-social">
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/amankr59" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script src="github-projects.js"></script>
+</body>
+</html> 
