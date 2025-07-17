@@ -366,11 +366,56 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Load Instagram reel thumbnails
+    // Load Instagram thumbnails
     loadInstagramThumbnails();
+    
+    // Media Club video functionality
+    const reelVideoContainers = document.querySelectorAll('.reel-video-container');
+    
+    reelVideoContainers.forEach(container => {
+        const video = container.querySelector('video');
+        const playButton = container.querySelector('.video-play-btn');
+        
+        if (video && playButton) {
+            video.addEventListener('play', function() {
+                playButton.style.opacity = '0';
+                playButton.style.visibility = 'hidden';
+                
+                // Pause all other videos
+                reelVideoContainers.forEach(otherContainer => {
+                    if (otherContainer !== container) {
+                        const otherVideo = otherContainer.querySelector('video');
+                        if (otherVideo && !otherVideo.paused) {
+                            otherVideo.pause();
+                        }
+                    }
+                });
+            });
+            
+            video.addEventListener('pause', function() {
+                if (!video.ended) {
+                    playButton.style.opacity = '0.8';
+                    playButton.style.visibility = 'visible';
+                }
+            });
+            
+            video.addEventListener('ended', function() {
+                playButton.style.opacity = '0.8';
+                playButton.style.visibility = 'visible';
+            });
+            
+            container.addEventListener('click', function() {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        }
+    });
 });
 
-// Function to load Instagram reel thumbnails
+// Function to load Instagram thumbnails
 function loadInstagramThumbnails() {
     // Instagram reel IDs and their corresponding thumbnail elements
     const reels = [
@@ -397,7 +442,7 @@ function loadInstagramThumbnails() {
             // Since we can't directly fetch Instagram thumbnails without authentication,
             // we'll use placeholder images with the reel title
             // In a real implementation, you would use Instagram's API with proper authentication
-            reel.element.src = `https://via.placeholder.com/600x800/1a1a1a/00e5ff?text=${encodeURIComponent(reel.title)}`;
+            reel.element.src = `https://via.placeholder.com/600x800/151515/00e5ff?text=${encodeURIComponent(reel.title)}`;
             reel.element.alt = reel.title;
         }
     });
